@@ -6,13 +6,14 @@ using UnityEngine.Serialization;
 
 public class GameManager: MonoBehaviour
 {
-    public SceneManager SceneManager;
+    [FormerlySerializedAs("SceneManager")] public GameSceneManager gameSceneManager;
     public ConfigManager ConfigManager;
 
     #region StartScene
     public void OnStart()
     {
         Debug.Log("Start is Clicked");
+        gameSceneManager.LoadScene("Home");
     }
 
     public void OnSettings()
