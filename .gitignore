@@ -6,3 +6,6 @@ Temp/
 
 # Ignore the Build folder
 Build/
+
+
+Logs/
