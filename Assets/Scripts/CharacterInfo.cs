@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "CharacterInfo", menuName = "ScriptableObjects/CharacterInfo", order = 1)]
 public class CharacterInfo : ScriptableObject
 {
     public CharacterStat Health;
@@ -17,6 +18,8 @@ public class CharacterInfo : ScriptableObject
     public CharacterStat EvadeChange;
     public CharacterStat BlockChange;
 
+    public CharacterStat MovementSpeed;
+    
     public CharacterStat Intelligence;
     public CharacterStat Strength;
     public CharacterStat Dexterity;
