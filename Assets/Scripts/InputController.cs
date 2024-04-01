@@ -7,10 +7,11 @@ public class InputController : MonoBehaviour
 {
     public NavMeshAgent Agent;
     public Dictionary<KeyCode, Action> InputActionMaps = new ();
+    public Animator Animator;
 
     private void Awake()
     {
-        LoadDefaultInputSettings();
+        LoadDefaultInputSettings(); 
     }
     
     void Update()
@@ -32,11 +33,36 @@ public class InputController : MonoBehaviour
     private void LoadDefaultInputSettings()
     {
         InputActionMaps.Add(KeyCode.Mouse1,MoveToMousePosition);
-        InputActionMaps.Add(KeyCode.Q,()=>Debug.Log("Skill1 ==> Q"));
-        InputActionMaps.Add(KeyCode.W,()=>Debug.Log("Skill2 ==> W"));
-        InputActionMaps.Add(KeyCode.E,()=>Debug.Log("Skill3 ==> E"));
-        InputActionMaps.Add(KeyCode.R,()=>Debug.Log("Skill4 ==> R"));
-        InputActionMaps.Add(KeyCode.T,()=>Debug.Log("Skill5 ==> T"));
+        InputActionMaps.Add(KeyCode.Mouse0,()=>
+        {
+            Debug.Log("BaseAttack ==> Mouse0");
+            Animator.SetTrigger("BasicAttack");
+        });
+        InputActionMaps.Add(KeyCode.Q,()=>
+        {
+            Debug.Log("Skill1 ==> Q");
+            Animator.SetTrigger("Skill1");
+        });
+        InputActionMaps.Add(KeyCode.W,()=>
+        {
+            Debug.Log("Skill2 ==> W");
+            Animator.SetTrigger("Skill2");
+        });
+        InputActionMaps.Add(KeyCode.E,()=>
+        {
+            Debug.Log("Skill3 ==> E");
+            Animator.SetTrigger("Skill3");
+        });
+        InputActionMaps.Add(KeyCode.R,()=>
+        {
+            Debug.Log("Skill4 ==> R");
+            Animator.SetTrigger("Skill4");
+        });
+        InputActionMaps.Add(KeyCode.T,()=>
+        {
+            Debug.Log("Skill5 ==> T");
+            Animator.SetTrigger("Skill5");
+        });
         InputActionMaps.Add(KeyCode.Alpha1,()=>Debug.Log("Util1 ==> 1"));
         InputActionMaps.Add(KeyCode.Alpha2,()=>Debug.Log("Util2 ==> 2"));
         InputActionMaps.Add(KeyCode.Alpha3,()=>Debug.Log("Util3 ==> 3"));

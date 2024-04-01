@@ -1156,6 +1156,7 @@ GameObject:
   - component: {fileID: 1282680916}
   - component: {fileID: 1282680917}
   - component: {fileID: 1282680918}
+  - component: {fileID: 1282680919}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1217,6 +1218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInfo: {fileID: 0}
   PlayerGO: {fileID: 1282680914}
+  Controller: {fileID: 1282680918}
 --- !u!114 &1282680918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1230,6 +1232,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Agent: {fileID: 1282680916}
+  Animator: {fileID: 1666003067}
+--- !u!54 &1282680919
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282680914}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1312689946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,11 +1746,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9036980633323257398, guid: f0368997b93599a4282b3ede4bf46ef5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c747dd387d0feff41aab34d9cdb3c83c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0368997b93599a4282b3ede4bf46ef5, type: 3}
 --- !u!4 &1666003066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8855052669661678444, guid: f0368997b93599a4282b3ede4bf46ef5, type: 3}
+  m_PrefabInstance: {fileID: 1666003065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1666003067 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9036980633323257398, guid: f0368997b93599a4282b3ede4bf46ef5, type: 3}
   m_PrefabInstance: {fileID: 1666003065}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1752248216

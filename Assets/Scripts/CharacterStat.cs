@@ -11,6 +11,13 @@ public class CharacterStat: MonoBehaviour
     private float _current;
     private float _currentPercent;
 
+    public CharacterStat(float min, float max, float current)
+    {
+        Max = max;
+        Min = min;
+        Current = current;
+    }
+
     public float Current {
         set
         {
