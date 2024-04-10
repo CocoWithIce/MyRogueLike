@@ -42,21 +42,30 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ConfigManager.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Builder\EnemyDirector.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Memento\MouseDrag.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Memento\Storage.cs" />
      <Compile Include="Assets\Scripts\Affixes.cs" />
      <Compile Include="Assets\Scripts\Equipment.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Memento\Item.cs" />
      <Compile Include="Assets\Scripts\EnumTable.cs" />
      <Compile Include="Assets\Scripts\CharacterStat.cs" />
      <Compile Include="Assets\Scripts\Equipments.cs" />
      <Compile Include="Assets\Scripts\Settings.cs" />
      <Compile Include="Assets\Scripts\CharacterInfo.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Memento\LoadOutManager.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Memento\HotBar.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Decorater\Card.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Memento\Singleton.cs" />
      <Compile Include="Assets\Scripts\Skills.cs" />
      <Compile Include="Assets\Scripts\GameSceneManager.cs" />
      <Compile Include="Assets\Scripts\InputController.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Decorater\ICard.cs" />
+     <Compile Include="Assets\Scripts\GamePattern\Memento\UISlot.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
-     <Compile Include="Assets\Scripts\GamePattern\EnemyDirector.cs" />
      <None Include="Assets\Packages\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Packages\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
